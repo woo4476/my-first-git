@@ -67,6 +67,8 @@ class LinkedList:
 	def size(self):
 		return self.num_of_data 
 
+#일본어통번역학과 201700801 김우영
+#(head)를 1번 노드에 출력시키기에는 실패했으나, 이외에는 정상작동함
 	def traverse_all(self):
 		current_node = self.head.next
 		while current_node is not None:
@@ -75,6 +77,9 @@ class LinkedList:
 		print("null")
 
 
+
+#일본어통번역학과 201700801 김우영
+#정상작동
 	def insert_at(self, position, new_data):
 		if position <= 0:
 			print("Error: position이 0보다 커야합니다.")
@@ -98,6 +103,9 @@ class LinkedList:
 		before_node.next = new_node
 
 		self.num_of_data += 1
+
+#일본어통번역학과 201700801 김우영
+#정상작동
 
 	def remove(self, key):
 			# 데이터가 없는 경우 삭제할 노드도 없기 때문에 None 리턴
